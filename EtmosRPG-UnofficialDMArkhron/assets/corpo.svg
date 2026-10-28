@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Corpo">
+  <path d="M20 16c0-6.6 5.4-12 12-12s12 5.4 12 12-5.4 12-12 12-12-5.4-12-12Z" fill="none" stroke="white" stroke-width="4"/>
+  <path d="M8 55v-8c0-9 7-15 16-15h16c9 0 16 6 16 15v8H8Z" fill="none" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M32 35v16m-8-8h16" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,343 @@
+.etmos-sheet .window-content{background:#f4eee0;color:#29243b;padding:14px}.etmos{height:100%;overflow:auto;font-family:Georgia,serif}.etmos input,.etmos textarea{color:#29243b;background:#fffaf0;border:1px solid #b9a9a1;border-radius:4px}.etmos-header{display:flex;gap:15px;align-items:center;border-bottom:2px solid #51365c;padding-bottom:12px}.etmos-header>img{width:84px;height:84px;object-fit:cover;cursor:pointer}.etmos-header>div{flex:1}.etmos-header input[name=name]{font-size:24px;width:100%}.etmos-header label{display:inline-flex;align-items:center;gap:5px;margin:6px 10px 0 0}.etmos-header label input[type=number]{width:55px}.etmos-stats,.etmos-resources{display:flex;justify-content:space-around;gap:8px;margin:14px 0}.etmos-stats>div{display:flex;align-items:center;gap:5px;padding:8px;background:#e8dfdc;border-radius:6px}.etmos-stats img{width:28px;height:28px}.etmos-stats input,.etmos-resources input[type=number]{width:45px;text-align:center}.etmos button{color:#fff;background:#51365c;border:0;border-radius:4px;cursor:pointer;padding:3px 8px}.etmos h2{border-bottom:1px solid #705977;margin-top:16px}.etmos h2 small{font-size:12px;float:right}.etmos-grimoire{display:grid;grid-template-columns:1fr 1fr;gap:8px}.etmos-grimoire section{background:#eee7df;padding:8px;border-radius:5px;min-height:80px}.etmos-grimoire h3{margin:0 0 7px}.etmos-grimoire h3 span{float:right}.etmos-item{display:flex;align-items:center;gap:6px;padding:3px;border-top:1px solid #cbbfc4}.etmos-item img{width:25px;height:25px}.etmos-item strong{flex:1}.etmos-item button{margin-left:auto}.etmos textarea{width:100%;min-height:90px}
+.etmos-grimoire-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px}.etmos-grimoire-heading h2{flex:1;margin:0}.etmos-grimoire-heading button{font-size:15px;padding:7px 16px}.etmos .etmos-guide,.etmos-cast .etmos-guide{font:13px/1.4 sans-serif;color:#65576a;margin:9px 0 13px}.etmos-group h3{display:flex;align-items:center;gap:7px}.etmos-group h3 img{width:22px;height:22px}.etmos-group h3 span{margin-left:auto}.etmos-group-funcao{border-top:3px solid #634569}.etmos-group-objeto{border-top:3px solid #4c7180}.etmos-group-caracteristica{border-top:3px solid #98754b}.etmos-group-complemento{border-top:3px solid #78824e}.etmos-empty{font:italic 12px sans-serif;color:#8b8188;margin:8px}.etmos-cast .window-content{background:#f4eee0;color:#29243b;padding:15px}.etmos-conjuration{height:100%;overflow-y:auto;font-family:Georgia,serif}.etmos-selection{display:flex;gap:10px;margin:10px 0}.etmos-selection span{flex:1;padding:9px;background:#e9dfd9;border-radius:5px}.etmos-cast-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.etmos-cast-grid section{background:#eae1db;border-radius:6px;padding:8px;min-height:100px}.etmos-cast-grid h3{margin:0 0 7px;border-bottom:1px solid #baaab0}.etmos-cast-grid small{float:right}.etmos-choice-list{max-height:140px;overflow-y:auto;display:flex;flex-direction:column;gap:3px}.etmos-choice-list button{display:flex;justify-content:space-between;gap:7px;min-height:27px;padding:4px 7px;text-align:left;border:1px solid #c4b8b7;border-radius:4px;background:#fffaf1;color:#29243b;cursor:pointer}.etmos-choice-list button:hover,.etmos-choice-list button.selected{border-color:#604668;background:#ded1e3}.etmos-choice-list code,.etmos-sequence code{color:#654b71}.etmos-sequence{min-height:35px;display:flex;gap:5px;flex-wrap:wrap;align-items:center}.etmos-sequence span{background:#ded1e3;border-radius:5px;padding:4px 6px}.etmos-sequence button{background:none;border:0;color:#582e4e;cursor:pointer}.etmos-preview{display:flex;flex-direction:column;gap:4px;background:#fffaf1;border-left:4px solid #604668;padding:10px;margin:12px 0}.etmos-preview strong{font-size:19px}.etmos-intention{display:block;font-weight:bold}.etmos-intention textarea{display:block;width:100%;min-height:75px;margin-top:5px;background:#fffaf1;color:#29243b}.etmos-conjuration footer{text-align:right;margin:10px 0}.etmos-conjuration footer button{background:#51365c;color:white;border:0;border-radius:5px;padding:9px 18px;cursor:pointer}.etmos-chat .phrase{font-size:1.25em;font-weight:bold}.etmos-chat-parts{font-size:.85em;opacity:.8}
+/* Legibilidade sobre os temas claro e escuro do Foundry V13. */
+.etmos-sheet .window-content,.etmos-cast .window-content{background:#f5f0e6!important;color:#292435!important}
+.etmos-sheet .etmos h2,.etmos-sheet .etmos h3,.etmos-cast .etmos-conjuration h3{color:#30273d!important;text-shadow:none!important}
+.etmos-sheet .etmos h2{font-size:21px;font-weight:700}
+.etmos-sheet .etmos-grimoire h3{font-size:16px;font-weight:700;letter-spacing:0;border-bottom:1px solid #c9bcbc;padding-bottom:8px}
+.etmos-sheet .etmos-item{padding:7px 4px;font-size:15px;min-height:36px}
+.etmos-sheet .etmos-item code{background:#3c304a;color:#fff;padding:4px 7px;border-radius:4px}
+.etmos-sheet .etmos-item button{width:27px;height:27px;padding:0;font-size:17px;flex:none}
+.etmos-sheet .etmos-group{background:#eee7de!important;padding:11px 10px!important}
+.etmos-cast .window-content{padding:16px!important}
+.etmos-cast .etmos-conjuration{font:15px/1.4 system-ui,sans-serif;color:#292435}
+.etmos-cast .etmos-cast-intro{background:#e7dde8;border-left:4px solid #5a3c69;padding:10px 13px;border-radius:4px}
+.etmos-cast .etmos-cast-intro strong{font-size:17px;color:#30243d}
+.etmos-cast .etmos-cast-intro p{margin:4px 0 0;color:#49404e;font-size:13px}
+.etmos-cast .etmos-selection{margin:12px 0;gap:12px}
+.etmos-cast .etmos-selection>div{flex:1;display:flex;flex-direction:column;gap:5px;background:#fffaf3;border:1px solid #cbbcc9;border-radius:6px;padding:10px 12px;min-width:0}
+.etmos-cast .etmos-selection small,.etmos-cast .etmos-preview small{color:#554062;font-size:11px;letter-spacing:.07em;font-weight:800}
+.etmos-cast .etmos-selection strong{font-size:15px;color:#2e2638}
+.etmos-cast .etmos-selection code{color:#5d3a70;font-weight:700;margin-left:5px}
+.etmos-cast .etmos-cast-grid{gap:12px;align-items:stretch}
+.etmos-cast .etmos-choice-group{background:#eee8df!important;border:1px solid #cfc5bd;border-top:4px solid #614772;border-radius:7px;padding:10px;min-width:0}
+.etmos-cast .etmos-choice-objeto{border-top-color:#4c7180}.etmos-cast .etmos-choice-caracteristica{border-top-color:#98754b}.etmos-cast .etmos-choice-complemento{border-top-color:#78824e}
+.etmos-cast .etmos-choice-group h3{display:flex;justify-content:space-between;align-items:center;margin:0 0 8px;padding:0 0 7px;border-bottom:1px solid #c9bcb7;font-size:17px;font-weight:750;line-height:1.2}
+.etmos-cast .etmos-choice-group h3 span{font:700 12px system-ui,sans-serif;color:#58495b;background:#dfd4d3;border-radius:10px;min-width:25px;text-align:center;padding:2px 6px}
+.etmos-cast .etmos-choice-list{max-height:166px;gap:5px;padding:1px 3px 3px 0;overflow-x:hidden}
+.etmos-cast .etmos-choice-list button.etmos-choice{appearance:none;box-sizing:border-box;width:100%;height:auto;min-height:39px;display:grid;grid-template-columns:minmax(0,1fr) auto 20px;align-items:center;gap:9px;margin:0;padding:7px 9px;background:#fffaf4!important;color:#302737!important;border:1px solid #b9adb8;border-radius:6px;box-shadow:none;text-align:left;font:600 14px/1.25 system-ui,sans-serif;text-shadow:none;cursor:pointer}
+.etmos-cast .etmos-choice-list button.etmos-choice:hover{background:#f0e5f1!important;border-color:#674276;box-shadow:0 0 0 1px #674276}
+.etmos-cast .etmos-choice-list button.etmos-choice.selected{background:#e6d7eb!important;border:2px solid #643b78}
+.etmos-cast .etmos-choice-name{min-width:0;white-space:normal;overflow-wrap:anywhere;color:#302737!important}
+.etmos-cast .etmos-choice-list code{font:700 12px system-ui,sans-serif;background:#4b3757;color:#fff!important;padding:4px 7px;border-radius:4px;min-width:32px;text-align:center}
+.etmos-cast .etmos-choice-mark{font-size:20px;line-height:1;color:#613d71;text-align:center;font-weight:700}
+.etmos-cast .etmos-builder{margin:13px 0 0}.etmos-cast .etmos-builder h3{font-size:15px;font-weight:700;margin:0 0 7px}
+.etmos-cast .etmos-sequence{gap:7px;min-height:42px}.etmos-cast .etmos-sequence-chip{display:inline-flex;align-items:center;gap:5px;background:#e4d6ea;color:#302737;border:1px solid #bca4c7;border-radius:5px;padding:4px 6px;font-size:13px;font-weight:600}
+.etmos-cast .etmos-sequence-chip code{background:#4b3757;color:#fff;padding:2px 4px;border-radius:3px}
+.etmos-cast .etmos-sequence-chip button{width:23px;height:23px;margin:0;padding:0;border:0;background:#fff4f4;color:#742f45;font-size:18px;line-height:1}
+.etmos-cast .etmos-preview{margin:12px 0;background:#fffaf3;border-left:4px solid #614772;padding:10px 12px}
+.etmos-cast .etmos-preview strong{color:#2e2638;font:700 20px/1.25 Georgia,serif;overflow-wrap:anywhere}
+.etmos-cast .etmos-intention{font-size:14px;color:#302737}.etmos-cast .etmos-intention textarea{font:14px/1.4 system-ui,sans-serif;padding:9px;border:1px solid #aa9aab;border-radius:5px;background:#fffaf3;color:#292435}
+.etmos-cast .etmos-conjuration footer button{width:auto;height:auto;min-height:38px;padding:8px 18px;font:700 14px system-ui,sans-serif;background:#51365c;color:#fff}
+/* Cabeçalho da ficha */
+.etmos-sheet .etmos-profile{display:grid;grid-template-columns:156px minmax(0,1fr);gap:16px;align-items:stretch;padding:0 0 16px;margin-bottom:12px;border-bottom:2px solid #60456d}
+.etmos-sheet .etmos-portrait{position:relative;width:156px;height:190px;display:block;padding:0;margin:0;border:2px solid #bba8bb;border-radius:10px;background:#e9e0da;overflow:hidden;box-shadow:0 3px 8px #2d24332a;cursor:pointer}
+.etmos-sheet .etmos-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.etmos-sheet .etmos-portrait span{position:absolute;bottom:0;left:0;right:0;display:block;padding:6px 2px;background:#30263bdc;color:white;font:700 11px system-ui,sans-serif;text-align:center}
+.etmos-sheet .etmos-profile-main{display:flex;flex-direction:column;min-width:0;gap:10px}
+.etmos-sheet .etmos-profile-title{min-width:0}
+.etmos-sheet .etmos-profile-title small{display:block;color:#725680;font:800 10px system-ui,sans-serif;letter-spacing:.12em;margin-bottom:3px}
+.etmos-sheet .etmos-profile-title input[name=name]{width:100%;height:40px;padding:4px 9px;font:700 23px/1.2 Georgia,serif;color:#2d2335;background:#fffaf2;border:1px solid #bcadba}
+.etmos-sheet .etmos-profile-fields{display:grid;grid-template-columns:minmax(0,1fr) 80px;gap:9px}
+.etmos-sheet .etmos-profile-fields label{display:flex;flex-direction:column;gap:3px;color:#514158;font:700 12px system-ui,sans-serif}
+.etmos-sheet .etmos-profile-fields input{width:100%;height:30px;padding:3px 8px;font:14px system-ui,sans-serif;color:#302737;background:#fffaf2}
+.etmos-sheet .etmos-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0;align-items:stretch}
+.etmos-sheet .etmos-stats .etmos-stat{display:flex;flex-direction:column;justify-content:space-between;gap:7px;min-width:0;margin:0;padding:8px;background:#e9e0db;border:1px solid #d7cbd0;border-radius:7px}
+.etmos-sheet .etmos-stat label{display:flex;gap:5px;align-items:center;color:#302737;font:700 12px system-ui,sans-serif;white-space:nowrap}
+.etmos-sheet .etmos-stat label img{width:22px;height:22px;flex:none}
+.etmos-sheet .etmos-stat>div{display:flex;gap:5px;align-items:center}
+.etmos-sheet .etmos-stat input{width:42px;min-width:0;height:29px;padding:2px;text-align:center;font-weight:700}
+.etmos-sheet .etmos-stat button{flex:1;min-width:0;height:29px;padding:2px;font:700 12px system-ui,sans-serif}
+.etmos-sheet .etmos-resources{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 15px}
+.etmos-sheet .etmos-resources label{display:flex;justify-content:center;align-items:center;gap:5px;padding:8px 5px;background:#eee7df;border:1px solid #d9cdd1;border-radius:6px;color:#302737;font:700 12px system-ui,sans-serif;white-space:nowrap}
+.etmos-sheet .etmos-resources input[type=number]{height:29px;margin:0;background:#fffaf2;font-weight:700}
+@media(max-width:650px){.etmos-sheet .etmos-profile{grid-template-columns:120px minmax(0,1fr)}.etmos-sheet .etmos-portrait{width:120px;height:165px}.etmos-sheet .etmos-stats{gap:3px}.etmos-sheet .etmos-stat{padding:5px!important}.etmos-sheet .etmos-resources{grid-template-columns:repeat(2,1fr)}}
+/* Card de conjuração no chat */
+.chat-message .etmos-chat{--etmos-funcao:#634569;--etmos-objeto:#4c7180;--etmos-caracteristica:#98754b;--etmos-complemento:#78824e;margin:3px 0;padding:0;border:1px solid #cfc1d1;border-radius:8px;overflow:hidden;background:#fffaf2;color:#302737;font:13px/1.4 system-ui,sans-serif}
+.chat-message .etmos-chat-heading{display:flex;align-items:center;gap:8px;margin:0;padding:8px 11px;background:#493454;color:#fff;font:800 11px system-ui,sans-serif;letter-spacing:.09em}
+.chat-message .etmos-chat-heading span{font-size:17px;line-height:1}
+.chat-message .etmos-chat-phrase{margin:0!important;padding:11px 11px 8px;color:#30213d;font:700 19px/1.25 Georgia,serif;overflow-wrap:anywhere}
+.chat-message .etmos-chat-particles{display:flex;flex-wrap:wrap;gap:6px;padding:0 10px 11px}
+.chat-message .etmos-chat-token{--tone:#634569;display:inline-flex;max-width:100%;align-items:center;gap:4px;padding:3px 6px 3px 3px;border:1px solid var(--tone);border-radius:5px;background:#fff;color:#2d2630;font:700 11px/1.2 system-ui,sans-serif;overflow-wrap:anywhere}
+.chat-message .etmos-token-funcao{--tone:#634569;background:#f0e9f2}.chat-message .etmos-token-objeto{--tone:#4c7180;background:#e8f1f3}.chat-message .etmos-token-caracteristica{--tone:#98754b;background:#f5eee2}.chat-message .etmos-token-complemento{--tone:#78824e;background:#eef2e4}
+.chat-message .etmos-token-mark{display:inline-grid;place-items:center;min-width:19px;height:19px;border-radius:3px;background:var(--tone);color:#fff;font:800 11px system-ui,sans-serif}
+.chat-message .etmos-token-name{min-width:0}.chat-message .etmos-chat-token code{margin-left:2px;color:var(--tone);background:transparent;font:800 10px system-ui,sans-serif}
+.chat-message .etmos-chat-intention{padding:9px 11px 11px;border-top:1px solid #e0d4df;background:#f7f1e9}
+.chat-message .etmos-chat-intention small{color:#60466d;font:800 10px system-ui,sans-serif;letter-spacing:.09em}
+.chat-message .etmos-chat-intention p{margin:4px 0 0;color:#342b35;font:13px/1.45 system-ui,sans-serif;overflow-wrap:anywhere}
+.etmos-sheet .etmos-resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.etmos-sheet .etmos-resource{display:flex;flex-direction:column;gap:6px;padding:9px 10px;border:1px solid #d1c4cf;border-radius:7px;background:#eee7df;min-width:0}
+.etmos-sheet .etmos-resource>label{display:flex;align-items:center;justify-content:space-between;color:#302737;font:700 14px system-ui,sans-serif}
+.etmos-sheet .etmos-resource>label span{display:flex;align-items:center;gap:4px}
+.etmos-sheet .etmos-resource>label strong{font-size:17px;color:#4e315a}
+.etmos-sheet .etmos-resource-options{display:grid;grid-template-columns:minmax(0,1fr) 63px 91px;gap:5px}
+.etmos-sheet .etmos-resource-options label{display:flex;flex-direction:column;gap:3px;min-width:0;color:#514158;font:700 10px system-ui,sans-serif;white-space:nowrap}
+.etmos-sheet .etmos-resource-options select,.etmos-sheet .etmos-resource-options input{width:100%;height:28px;padding:2px 4px;background:#fffaf2;color:#302737;border:1px solid #bbaeb9;border-radius:4px;font:12px system-ui,sans-serif}
+.etmos-sheet .etmos-resource>small{color:#65586a;font:11px system-ui,sans-serif}
+.etmos-sheet .etmos-resource-minor{display:flex;justify-content:space-around;align-items:center;gap:8px;grid-column:1/-1;padding:6px 10px;background:#eee7df;border-radius:6px}
+.etmos-sheet .etmos-resource-minor label{display:flex;align-items:center;gap:6px;color:#302737;font:700 12px system-ui,sans-serif}
+.etmos-sheet .etmos-resource-minor input[type=number]{width:45px;height:28px;background:#fffaf2}
+@media(max-width:650px){.etmos-sheet .etmos-resources{grid-template-columns:1fr}.etmos-sheet .etmos-resource-options{grid-template-columns:minmax(0,1fr) 63px 91px}}
+.etmos-sheet .etmos-tabs{display:flex;gap:5px;margin:3px 0 14px;border-bottom:2px solid #bbaabc}
+.etmos-sheet .etmos-tabs button{width:auto;min-width:0;height:36px;padding:7px 15px;border-radius:6px 6px 0 0;background:#e6dce6;color:#493953;font:700 13px system-ui,sans-serif}
+.etmos-sheet .etmos-tabs button.active{background:#5d426a;color:#fff}
+.etmos-sheet .etmos-tabs button span{display:inline-block;margin-left:5px;border-radius:10px;padding:1px 5px;background:#fff;color:#51365c}
+.etmos-sheet .etmos-origin-tab h2{margin:2px 0 8px;color:#302737;font:700 23px Georgia,serif}
+.etmos-sheet .etmos-origin-tab>p{margin:0 0 13px;color:#55465b;font:13px/1.4 system-ui,sans-serif}
+.etmos-sheet .etmos-origin-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.etmos-sheet .etmos-origin-card{display:flex;flex-direction:column;gap:7px;min-width:0;padding:12px;background:#fffaf2;border:1px solid #d6c2c9;border-top:4px solid #a66372;border-radius:7px;color:#302737}
+.etmos-sheet .etmos-origin-card header{display:flex;align-items:center;gap:10px}
+.etmos-sheet .etmos-origin-card header img{width:37px;height:37px}
+.etmos-sheet .etmos-origin-card header h3{margin:0;color:#392a3c;font:700 16px Georgia,serif}
+.etmos-sheet .etmos-origin-card header span{color:#805162;font:700 11px system-ui,sans-serif}
+.etmos-sheet .etmos-origin-card p{margin:0;font:13px/1.5 system-ui,sans-serif;color:#403740}
+.etmos-sheet .etmos-origin-card .etmos-origin-detail{border-left:2px solid #a66372;padding-left:7px}
+.etmos-sheet .etmos-origin-card footer{display:flex;justify-content:flex-end;gap:6px;margin-top:auto;padding-top:8px}
+.etmos-sheet .etmos-origin-card footer button{width:auto;height:31px;padding:5px 9px;font:700 11px system-ui,sans-serif}
+.etmos-sheet .etmos-origin-card footer button:last-child{background:#eee3e5;color:#643749}
+.etmos-sheet .etmos-origin-empty{grid-column:1/-1;padding:25px;text-align:center;border:1px dashed #bda4af;border-radius:6px;color:#5d5062}
+@media(max-width:650px){.etmos-sheet .etmos-origin-list{grid-template-columns:1fr}}
+.chat-message .etmos-origin-chat{border:1px solid #d1b3bf;border-radius:7px;overflow:hidden;background:#fffaf3;color:#342b35;font:13px/1.4 system-ui,sans-serif}
+.chat-message .etmos-origin-chat header{display:flex;align-items:center;gap:6px;padding:7px 9px;background:#a66372;color:#fff;font:800 10px system-ui,sans-serif;letter-spacing:.06em}
+.chat-message .etmos-origin-chat header img{width:20px;height:20px}
+.chat-message .etmos-origin-chat h3{margin:9px 10px 2px;color:#3c283a;font:700 18px Georgia,serif}
+.chat-message .etmos-origin-chat p{margin:5px 10px 10px;color:#3f3540}
+.chat-message .etmos-origin-chat .etmos-origin-tags{color:#8b5367;font-weight:700;font-size:11px}
+.etmos-sheet .etmos-origin-choice{display:flex;align-items:end;gap:6px;margin-top:3px}
+.etmos-sheet .etmos-origin-choice label{flex:1;min-width:0;color:#795365;font:700 11px system-ui,sans-serif}
+.etmos-sheet .etmos-origin-choice input{display:block;width:100%;height:29px;margin-top:3px;padding:4px 7px;font:12px system-ui,sans-serif;background:#fff;color:#342b35}
+.etmos-sheet .etmos-origin-choice button{width:auto;height:29px;padding:4px 8px;font:700 11px system-ui,sans-serif}
+.etmos-sheet .etmos-save-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:6px 0 9px;color:#5c4c62;font:12px system-ui,sans-serif}
+.etmos-sheet .etmos-save-row button{width:auto;min-width:100px;height:32px;padding:5px 10px;font:700 12px system-ui,sans-serif}
+.etmos-sheet .etmos-stat input:focus{outline:2px solid #6c4b7d;outline-offset:1px}
+.etmos-sheet [data-etmos-panel][hidden]{display:none!important}
+.etmos-sheet .etmos-stat button.etmos-stat-label{width:100%;height:auto;min-height:28px;display:flex;align-items:center;gap:5px;margin:0;padding:2px 3px;background:transparent;color:#302737;border:0;text-align:left;font:700 12px system-ui,sans-serif}
+.etmos-sheet .etmos-stat button.etmos-stat-label:hover{background:#ddd0de;color:#302737}
+.etmos-sheet .etmos-stat-label img{width:22px;height:22px}
+.etmos-sheet .etmos-skills-section{margin-top:22px}.etmos-sheet .etmos-skill-card{border-top-color:#527187}
+.etmos-roll .window-content{background:#f5f0e6!important;color:#302737!important;padding:15px!important}
+.etmos-roll-body{font:14px/1.45 system-ui,sans-serif}.etmos-roll-body h2{margin:0 0 8px;color:#302737;font:700 23px Georgia,serif}.etmos-roll-body p{margin:6px 0 12px}
+.etmos-roll-base{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;margin-bottom:12px;border-left:4px solid #614772;background:#fffaf2;font-weight:700}
+.etmos-roll-body>label{display:block;margin:10px 0;color:#493953;font-weight:700}
+.etmos-roll-body select,.etmos-roll-body input{display:block;box-sizing:border-box;width:100%;height:36px;padding:5px 8px;margin-top:4px;color:#302737;background:#fffaf2;border:1px solid #baaabd;border-radius:5px}
+.etmos-roll-body .etmos-roll-hint{font-size:12px;color:#5d5062}.etmos-roll-body footer{text-align:right}.etmos-roll-body footer button{width:auto;height:36px;padding:7px 16px;border:0;border-radius:5px;color:#fff;background:#51365c;font-weight:700}
+
+/* Janela de teste */
+.etmos-roll .window-content{padding:0!important;background:#f4eee6!important;overflow:auto}
+.etmos-roll-body{color:#302737;font:13px/1.4 system-ui,sans-serif;padding:0 18px 18px}
+.etmos-roll-hero{display:flex;align-items:center;gap:14px;margin:0 -18px 17px;padding:20px 19px;background:linear-gradient(125deg,#493454,#6b4b72);color:#fff}
+.etmos-roll-sigil{display:grid;place-items:center;flex:none;width:48px;height:48px;border:1px solid #ddcde2;border-radius:12px;font-size:28px;background:#ffffff18}
+.etmos-roll-hero small{font-size:10px;letter-spacing:.18em;font-weight:800;color:#e5d5ed}
+.etmos-roll-hero h2{margin:2px 0!important;color:#fff!important;font:700 22px Georgia,serif!important}
+.etmos-roll-hero p{margin:0!important;color:#f2e7f4;font-size:12px}
+.etmos-roll-section{display:flex;align-items:start;gap:9px;margin:12px 0 8px}
+.etmos-roll-index{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:#604669;color:#fff;font-weight:800;font-size:11px}
+.etmos-roll-section strong{display:block;color:#3c2b46;font-size:14px}.etmos-roll-section p{margin:0;color:#685c69;font-size:11px}
+.etmos-roll-base{display:flex;align-items:center;justify-content:space-between;margin:0 0 10px;padding:9px 11px;border:1px solid #d7c8d8;border-left:4px solid #604669;border-radius:6px;background:#fffaf2}
+.etmos-roll-base span{display:flex;flex-direction:column;text-transform:capitalize}.etmos-roll-base small{font-size:9px;letter-spacing:.12em;color:#715b78;font-weight:800}.etmos-roll-base strong{font-size:15px}.etmos-roll-base b{display:grid;place-items:center;min-width:34px;height:34px;border-radius:8px;background:#e7dce8;color:#493454;font-size:17px}
+.etmos-roll-field{display:block;margin:8px 0;font-size:12px;font-weight:750;color:#493953}.etmos-roll-field>span{display:block;margin-bottom:4px}
+.etmos-roll-field select,.etmos-roll-field input{display:block;width:100%;height:37px;box-sizing:border-box;padding:6px 9px;color:#302737;background:#fffaf2;border:1px solid #baaabd;border-radius:6px;font:13px system-ui,sans-serif}
+.etmos-roll-field select:focus,.etmos-roll-field input:focus{outline:2px solid #7a5c88;outline-offset:1px}
+.etmos-roll-hint{margin:11px 0;color:#615663;font-size:11px;line-height:1.4}
+.etmos-roll-summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;margin:13px 0 12px;border-radius:7px;background:#eee4eb;color:#493454;font-weight:700}
+.etmos-roll-summary span{overflow-wrap:anywhere}.etmos-roll-summary strong{white-space:nowrap;font-size:18px}
+.etmos-roll-body footer{text-align:right}.etmos-roll-body footer button{width:auto;min-height:37px;padding:7px 17px;border:0;border-radius:6px;background:#51365c;color:#fff;font-weight:800;cursor:pointer}.etmos-roll-body footer button:hover{background:#71507e}
+/* Card do teste no chat */
+.chat-message .etmos-test-card{--test-tone:#604669;margin:3px 0;overflow:hidden;border:1px solid #d2c3d5;border-radius:8px;background:#fffaf2;color:#302737;font:12px/1.4 system-ui,sans-serif}
+.chat-message .etmos-test-skill{--test-tone:#4c7180}
+.chat-message .etmos-test-heading{display:flex;align-items:center;gap:7px;padding:8px 11px;background:var(--test-tone);color:white;font-size:10px;font-weight:850;letter-spacing:.1em}
+.chat-message .etmos-test-symbol{font-size:16px;line-height:1}
+.chat-message .etmos-test-main{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 11px 10px}
+.chat-message .etmos-test-label{font:700 19px/1.2 Georgia,serif;overflow-wrap:anywhere;text-transform:capitalize}.chat-message .etmos-test-formula{flex:none;font-weight:800;color:var(--test-tone)}
+.chat-message .etmos-test-detail{display:flex;flex-wrap:wrap;gap:6px;padding:0 10px 11px}.chat-message .etmos-test-detail>span{display:inline-flex;align-items:center;gap:5px;padding:4px 7px;border:1px solid #e1d6e1;border-radius:5px;background:#f8f1ea;color:#5d5360;font-size:10px}.chat-message .etmos-test-detail strong{color:#322638;font-size:11px}
+.chat-message .etmos-test-dice{display:flex;gap:3px}.chat-message .etmos-test-die{display:inline-grid;place-items:center;min-width:16px;height:16px;border:1px solid var(--test-tone);border-radius:3px;background:white;color:var(--test-tone)}
+.chat-message .etmos-test-result{display:flex;align-items:center;justify-content:space-between;padding:8px 11px;border-top:1px solid #e0d4df;background:#f2e9f0;color:var(--test-tone)}.chat-message .etmos-test-result span{font-size:10px;font-weight:850;letter-spacing:.12em}.chat-message .etmos-test-result strong{font:800 27px/1 system-ui,sans-serif}
+/* Leitura ampliada dos testes no chat estreito do Foundry */
+.chat-message .etmos-test-card{font-size:14px;line-height:1.45}
+.chat-message .etmos-test-heading{padding:11px 13px;font-size:12px;letter-spacing:.07em}
+.chat-message .etmos-test-symbol{font-size:20px}
+.chat-message .etmos-test-main{display:block;padding:14px 13px 11px}
+.chat-message .etmos-test-label{display:block;font:700 21px/1.2 Georgia,serif}
+.chat-message .etmos-test-formula{display:block;margin-top:5px;font-size:15px}
+.chat-message .etmos-test-breakdown{padding:0 13px 13px}
+.chat-message .etmos-test-row{display:flex;justify-content:space-between;align-items:center;gap:9px;min-height:35px;padding:7px 0;border-top:1px solid #e5dce5}
+.chat-message .etmos-test-row>span{font-size:12px;line-height:1.25;color:#51465a;overflow-wrap:anywhere}
+.chat-message .etmos-test-row>strong{flex:none;font-size:17px;color:var(--test-tone)}
+.chat-message .etmos-test-dice{display:flex;flex:none;gap:7px}
+.chat-message .etmos-test-die{display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:38px;height:42px;border:2px solid var(--test-tone);border-radius:7px;background:white;color:var(--test-tone)}
+.chat-message .etmos-test-die small{font:800 9px/1 system-ui,sans-serif;color:#66586b}
+.chat-message .etmos-test-die strong{font:800 22px/1.1 system-ui,sans-serif;color:var(--test-tone)}
+.chat-message .etmos-test-copies{padding:4px 8px 9px;border-left:3px solid var(--test-tone);background:#f4eef2;color:#524758;font-size:11px;overflow-wrap:anywhere}
+.chat-message .etmos-test-result{padding:11px 13px}.chat-message .etmos-test-result span{font-size:11px}.chat-message .etmos-test-result strong{font-size:35px}
+/* Navegação e atributos da versão 0.6 */
+.etmos-sheet .etmos [hidden]{display:none!important}
+.etmos-sheet .etmos-stats .etmos-stat{border-top:4px solid #60466d;padding:10px;gap:8px;background:#fffaf2}
+.etmos-sheet .etmos-stat.mente{border-top-color:#4c7180}.etmos-sheet .etmos-stat.alma{border-top-color:#98754b}
+.etmos-sheet .etmos-stat-top{display:flex;align-items:center;gap:7px;color:#302737;font:800 15px system-ui,sans-serif}
+.etmos-sheet .etmos-stat-top img{width:30px;height:30px;flex:none}
+.etmos-sheet .etmos-stat-controls{display:flex;align-items:center;gap:8px}
+.etmos-sheet .etmos-stat-controls input{width:48px;height:38px;font-size:20px}
+.etmos-sheet .etmos-stat-controls button{min-height:38px;font-size:13px}
+.etmos-sheet .etmos-stat small{color:#645767;font:11px system-ui,sans-serif}
+.etmos-sheet .etmos-complexity{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px;margin:12px 0;border:1px solid #c6b4ca;border-left:5px solid #4c7180;border-radius:7px;background:#fffaf2;font:700 14px system-ui,sans-serif}
+.etmos-sheet .etmos-complexity strong{padding:5px 10px;background:#4c7180;color:#fff;border-radius:5px}
+.etmos-sheet .etmos-complexity small{flex-basis:100%;color:#655969;font:11px system-ui,sans-serif}
+.etmos-sheet .etmos-subtabs{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0 15px}
+.etmos-sheet .etmos-subtabs button{background:#e7dfe8;color:#423249;padding:8px 12px;font:700 12px system-ui,sans-serif}
+.etmos-sheet .etmos-subtabs button.active{background:#5d426a;color:#fff}
+.etmos-sheet .etmos-milestones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.etmos-sheet .etmos-milestone{min-width:0;padding:12px;border-top:4px solid #60466d;border-radius:7px;background:#eee7df;font:12px system-ui,sans-serif}
+.etmos-sheet .etmos-milestone:nth-child(2){border-top-color:#4c7180}.etmos-sheet .etmos-milestone:nth-child(3){border-top-color:#98754b}
+.etmos-sheet .etmos-milestone h3{margin:0 0 10px}.etmos-sheet .etmos-milestone-counts{display:flex;gap:8px;margin-bottom:10px}.etmos-sheet .etmos-milestone label{display:block;flex:1;font-weight:700}
+.etmos-sheet .etmos-milestone input{display:block;width:100%;height:32px;margin-top:4px;text-align:center}.etmos-sheet .etmos-milestone textarea{min-height:100px;margin-top:5px;font:12px system-ui,sans-serif}
+@media(max-width:650px){.etmos-sheet .etmos-milestones{grid-template-columns:1fr}.etmos-sheet .etmos-stat small{display:none}}
+/* Personagem, recursos e progressão */
+.etmos-sheet .etmos-profile-fields{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.etmos-sheet .etmos-profile-title label{display:block;color:#594862;font:800 12px system-ui,sans-serif}
+.etmos-sheet .etmos-profile-title input{display:block;margin-top:4px}
+.etmos-sheet .etmos-profile-fields label{min-width:0;background:#fffaf2;border:1px solid #cfbfd0;padding:6px;border-radius:6px}
+.etmos-sheet .etmos-profile-fields input{height:37px;font-size:18px;font-weight:800}
+.etmos-sheet .etmos-level{display:block;line-height:37px;color:#4e315a;font-size:23px;text-align:center}
+.etmos-sheet .etmos-resources{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.etmos-sheet .etmos-resource{border-top:4px solid #60466d;gap:8px;padding:12px;background:#fffaf2}
+.etmos-sheet .etmos-resource-wounds{border-top-color:#a75a60}.etmos-sheet .etmos-status-card{border-top-color:#4c7180}.etmos-sheet .etmos-status-card:last-child{border-top-color:#78824e}
+.etmos-sheet .etmos-resource-head{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#352b3e;font:800 15px system-ui,sans-serif}
+.etmos-sheet .etmos-resource-head strong{font-size:17px;color:#4e315a}
+.etmos-sheet .etmos-resource-current{display:flex!important;justify-content:space-between!important;padding:0!important;background:transparent!important;border:0!important;font-size:12px!important}
+.etmos-sheet .etmos-resource-current input{height:37px!important;width:64px!important;font-size:19px;font-weight:800}
+.etmos-sheet .etmos-status-card p{margin:0;color:#423747;font:12px/1.45 system-ui,sans-serif}
+.etmos-sheet .etmos-reaction-toggle{display:flex!important;justify-content:flex-start!important;gap:9px!important;padding:8px!important}
+.etmos-sheet .etmos-reaction-toggle input{width:20px;height:20px;accent-color:#63804b}
+.etmos-sheet .etmos-complexity{display:block;background:#fffaf2;padding:14px}
+.etmos-sheet .etmos-complexity-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.etmos-sheet .etmos-complexity-head strong{font-size:17px}.etmos-sheet .etmos-complexity-head small{flex-basis:100%;margin-bottom:4px}
+.etmos-sheet .etmos-complexity-track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.etmos-sheet .etmos-complexity-track span{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:53px;padding:4px;border:1px dashed #c8bcc8;border-radius:6px;background:#eee9eb;color:#706675;text-align:center;opacity:.68}
+.etmos-sheet .etmos-complexity-track span.unlocked{border:1px solid #4c7180;background:#e3eff1;color:#294b59;opacity:1}
+.etmos-sheet .etmos-complexity-track b{font:800 12px system-ui,sans-serif}.etmos-sheet .etmos-complexity-track small{font:10px system-ui,sans-serif}
+.etmos-sheet .etmos-concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.etmos-sheet .etmos-concept-grid label{color:#46344d;font:800 13px system-ui,sans-serif}
+.etmos-sheet .etmos-concept-grid textarea{display:block;margin-top:5px;min-height:105px;padding:9px;font:13px/1.4 system-ui,sans-serif}
+.etmos-sheet .etmos-advancement-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.etmos-sheet .etmos-advancement-head h2{flex:1}.etmos-sheet .etmos-advancement-head button{padding:8px 12px;font-weight:800}
+.etmos-sheet .etmos-advancement-head button:disabled{opacity:.55;cursor:not-allowed}
+.etmos-advancement .window-content{background:#f5f0e6!important;color:#302737!important;overflow:auto}
+.etmos-advancement-body{font:13px/1.45 system-ui,sans-serif}
+.etmos-advancement-body>header{margin:-12px -12px 15px;padding:18px;background:#493454;color:#fff}
+.etmos-advancement-body>header small{letter-spacing:.13em;font-weight:800}.etmos-advancement-body h2{margin:3px 0;color:white;font:700 27px Georgia,serif}
+.etmos-advancement-body h3{margin:8px 0;color:#3d2d48;font:800 16px system-ui,sans-serif}
+.etmos-advancement-body p{margin:5px 0 10px}.etmos-advancement-body label{display:block;margin:8px 0;font-weight:750;color:#44364e}
+.etmos-advancement-body select{display:block;width:100%;height:37px;margin-top:4px;background:#fffaf2;color:#302737;border:1px solid #bbaabc;border-radius:5px;padding:5px}
+.etmos-advancement-categories,.etmos-advancement-attribute,.etmos-advancement-catalog{padding:12px;margin:10px 0;background:#eee7df;border-radius:7px}
+.etmos-advancement-pick{margin:10px 0;padding:9px;border-left:4px solid #4c7180;background:#fffaf2;border-radius:5px}
+.etmos-advancement-description{min-height:30px;white-space:pre-wrap;color:#4c404f}
+.etmos-advancement-note{color:#554962;font-size:12px}.etmos-advancement-body footer{text-align:right;padding:10px}
+.etmos-advancement-body footer button{background:#51365c;color:#fff;border:0;border-radius:5px;padding:10px 18px;font-weight:800;cursor:pointer}
+.etmos-advancement-body footer button:disabled{opacity:.5}
+@media(max-width:650px){.etmos-sheet .etmos-concept-grid,.etmos-sheet .etmos-resources{grid-template-columns:1fr}.etmos-sheet .etmos-complexity-track{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.etmos-sheet .etmos-add-milestone,.etmos-sheet .etmos-milestone-award button{width:100%;min-height:35px;margin:4px 0 9px;font:800 12px system-ui,sans-serif}
+.etmos-sheet .etmos-add-milestone:disabled{opacity:.55;cursor:not-allowed}
+.etmos-sheet .etmos-milestone-award{min-height:38px;margin:3px 0 10px;padding:7px;border-radius:5px;background:#fffaf2;color:#514358;font:12px/1.3 system-ui,sans-serif}
+.etmos-sheet .etmos-milestone-award strong{color:#2f613e}
+
+.etmos-sheet .etmos-profile-fields input.etmos-level{display:block;width:100%;height:37px;padding:3px 8px;color:#4e315a;background:#fffaf2;border:1px solid #b9a9a1;border-radius:4px;font-size:22px;font-weight:800;text-align:center}
+.etmos-sheet .etmos-mark-boxes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:13px 0 8px}
+.etmos-sheet .etmos-mark-boxes button{height:36px;min-width:0;padding:0;border:2px solid #b9a5bc;border-radius:5px;background:#fffaf2;color:#fff;font:800 20px system-ui,sans-serif}
+.etmos-sheet .etmos-mark-boxes button.checked{border-color:#5d426a;background:#5d426a}
+.etmos-sheet .etmos-mark-boxes button:disabled:not(.checked){opacity:.45;cursor:default}
+.etmos-sheet .etmos-mark-boxes button:focus-visible{outline:3px solid #4c7180;outline-offset:2px}
+.etmos-sheet .etmos-milestone>small{color:#65586a;font:700 11px system-ui,sans-serif}
+/* Botão abaixo de Criar Ator / Criar Pasta */
+#actors .etmos-generator-launch,.actor-directory .etmos-generator-launch{display:block;width:100%;padding:6px 8px 8px}
+.etmos-generator-launch{display:block;width:100%;padding:6px 8px 8px}
+.etmos-generator-launch button{display:block;width:100%;min-height:32px;border:1px solid #8d7195;border-radius:5px;background:#51365c;color:#fff;font:800 12px system-ui,sans-serif;cursor:pointer}
+.etmos-generator-launch button:hover{background:#6e4d79}
+.etmos-generator .window-content{overflow:auto;background:#f5f0e6!important;color:#302737!important}
+.etmos-generator-body{font:13px/1.4 system-ui,sans-serif}
+.etmos-generator-body>header{margin:-12px -12px 16px;padding:18px;background:#493454;color:#fff}
+.etmos-generator-body>header small{font-weight:800;letter-spacing:.14em}.etmos-generator-body>header h2{margin:3px 0;color:#fff;font:700 26px Georgia,serif}
+.etmos-generator-body h3{color:#3d2d48;font:800 16px system-ui,sans-serif;margin:0 0 7px}
+.etmos-generator-body label{display:block;color:#44364e;font-weight:750}
+.etmos-generator-body input,.etmos-generator-body select{display:block;box-sizing:border-box;width:100%;min-height:34px;margin-top:4px;padding:5px 8px;border:1px solid #bbaabc;border-radius:5px;background:#fffaf2;color:#302737;font:13px system-ui,sans-serif}
+.etmos-generator-basics{display:grid;grid-template-columns:2fr 1fr 1.25fr;gap:10px}
+.etmos-generator-attributes{padding:12px;margin:14px 0;border-radius:7px;background:#eee7df}
+.etmos-generator-attributes h3 span{float:right;font-size:13px;color:#624874}.etmos-generator-attributes>div{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.etmos-generator-attributes p{margin:3px 0 9px;color:#625567}
+.etmos-generator-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.etmos-generator-group{padding:12px;min-width:0;border:1px solid #d3c6d1;border-top:4px solid #60466d;border-radius:7px;background:#eee7df}
+.etmos-generator-group:nth-child(2){border-top-color:#4c7180}.etmos-generator-group:nth-child(3){border-top-color:#98754b}.etmos-generator-group:nth-child(4){border-top-color:#a66372}.etmos-generator-group:nth-child(n+5){border-top-color:#78824e}
+.etmos-generator-group h3 small{font:700 11px system-ui,sans-serif;color:#66576a}
+.etmos-generator-choice{margin-top:9px;padding:8px;border-radius:5px;background:#fffaf2}
+.etmos-generator-description{min-height:27px;margin:7px 0 0;color:#55465c;font:12px/1.4 system-ui,sans-serif;white-space:pre-wrap}
+.etmos-generator-note{font-size:12px;color:#68596b}.etmos-generator-body footer{text-align:right;padding:12px 0}
+.etmos-generator-body footer button{border:0;border-radius:5px;padding:9px 19px;background:#51365c;color:#fff;font-weight:800;cursor:pointer}
+.etmos-generator-body footer button:disabled{opacity:.55}
+@media(max-width:650px){.etmos-generator-groups{grid-template-columns:1fr}.etmos-generator-basics{grid-template-columns:1fr 1fr}.etmos-generator-basics label:first-child{grid-column:1/-1}}
+/* Atributos com valor e ação de teste em áreas separadas */
+.etmos-sheet .etmos-stats{gap:9px}
+.etmos-sheet .etmos-stats .etmos-stat{--stat:#765067;display:flex;flex-direction:column;gap:11px;justify-content:space-between;padding:12px;border:1px solid #d8cad5;border-top:4px solid var(--stat);border-radius:9px;background:linear-gradient(155deg,#fffaf2 65%,#f0e8ef);box-shadow:0 2px 5px #35253a12}
+.etmos-sheet .etmos-stat.corpo{--stat:#a45b5b}.etmos-sheet .etmos-stat.mente{--stat:#4d7892}.etmos-sheet .etmos-stat.alma{--stat:#835da0}
+.etmos-sheet .etmos-stat .etmos-stat-top{display:flex;align-items:center;gap:8px;min-height:38px}
+.etmos-sheet .etmos-stat-emblem{display:grid;place-items:center;width:37px;height:37px;flex:none;border-radius:10px;background:var(--stat)}
+.etmos-sheet .etmos-stat-emblem img{width:28px;height:28px;filter:brightness(0) invert(1)}
+.etmos-sheet .etmos-stat-top>div{min-width:0}.etmos-sheet .etmos-stat-top label{display:block;color:#332737;font:800 15px/1.1 system-ui,sans-serif}
+.etmos-sheet .etmos-stat-top small{display:block;margin-top:3px;color:#645968;font:10px/1.2 system-ui,sans-serif;white-space:normal}
+.etmos-sheet .etmos-stat .etmos-stat-controls{display:grid;grid-template-columns:1fr;gap:8px;align-items:stretch}
+.etmos-sheet .etmos-stat-value{display:flex;justify-content:space-between;align-items:center;min-height:42px;padding:4px 8px;border:1px solid #ded2d8;border-radius:6px;background:#fffdf9}
+.etmos-sheet .etmos-stat-value span{color:#746578;font:800 10px system-ui,sans-serif;letter-spacing:.12em}
+.etmos-sheet .etmos-stat-value input{width:53px;height:37px;padding:2px 3px;border:0;border-bottom:2px solid var(--stat);border-radius:0;background:transparent;color:#35243d;font:800 26px/1 system-ui,sans-serif;text-align:center}
+.etmos-sheet .etmos-stat .etmos-stat-controls button{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;min-height:37px;padding:5px 7px;border-radius:6px;background:var(--stat);color:white;font:800 12px system-ui,sans-serif}
+.etmos-sheet .etmos-stat .etmos-stat-controls button:hover{filter:brightness(1.13)}
+.etmos-sheet .etmos-stat-die{font-size:18px;line-height:1}
+/* Cores próprias para os dois tipos de Habilidade */
+.etmos-generator .etmos-generator-group-pratica{border-top-color:#227e88;background:#e8f2f2}
+.etmos-generator .etmos-generator-group-teorica{border-top-color:#77549b;background:#f0eaf5}
+.etmos-generator .etmos-generator-group-pratica h3{color:#175763}.etmos-generator .etmos-generator-group-teorica h3{color:#553b73}
+.etmos-generator .etmos-generator-group-pratica .etmos-generator-choice{border-left:3px solid #227e88}
+.etmos-generator .etmos-generator-group-teorica .etmos-generator-choice{border-left:3px solid #77549b}
+.etmos-sheet .etmos-subtabs button[data-subtab="pratica"]{background:#d8eced;color:#175763}
+.etmos-sheet .etmos-subtabs button[data-subtab="teorica"]{background:#e8ddf0;color:#553b73}
+.etmos-sheet .etmos-subtabs button[data-subtab="pratica"].active{background:#227e88;color:#fff}
+.etmos-sheet .etmos-subtabs button[data-subtab="teorica"].active{background:#77549b;color:#fff}
+.etmos-sheet .etmos-skills-section[data-etmos-subpanel="pratica"] .etmos-skill-card{border-top-color:#227e88}
+.etmos-sheet .etmos-skills-section[data-etmos-subpanel="teorica"] .etmos-skill-card{border-top-color:#77549b}
+@media(max-width:650px){.etmos-sheet .etmos-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.etmos-sheet .etmos-stats .etmos-stat{padding:7px}.etmos-sheet .etmos-stat-emblem{width:29px;height:29px}.etmos-sheet .etmos-stat-emblem img{width:22px;height:22px}.etmos-sheet .etmos-stat-top label{font-size:12px}.etmos-sheet .etmos-stat-top small{display:none}.etmos-sheet .etmos-stat .etmos-stat-controls button{font-size:11px}}
+/* Retrato ampliado e interação por clique */
+.etmos-sheet .etmos-profile{grid-template-columns:200px minmax(0,1fr);gap:16px;align-items:stretch}
+.etmos-sheet .etmos-portrait{width:200px;height:100%;min-height:312px;max-height:360px;border-radius:11px;border:2px solid #bba8bb}
+.etmos-sheet .etmos-portrait img{width:100%;height:100%;object-fit:cover}
+.etmos-sheet .etmos-portrait span{font:700 10px/1.25 system-ui,sans-serif;padding:8px 4px}
+.etmos-sheet .etmos-portrait:hover{outline:2px solid #765087;outline-offset:2px}
+.etmos-sheet .etmos-stat-die{width:20px;height:20px;flex:none;display:block}
+.etmos-sheet .etmos-stat .etmos-stat-controls button{gap:8px;min-height:40px}
+@media(max-width:650px){.etmos-sheet .etmos-profile{grid-template-columns:140px minmax(0,1fr);gap:10px}.etmos-sheet .etmos-portrait{width:140px;min-height:300px}.etmos-sheet .etmos-portrait span{font-size:9px}.etmos-sheet .etmos-stat-die{width:17px;height:17px}}
+/* Leitura dos itens dos compêndios e da ficha */
+.etmos-item-sheet .window-content{padding:14px!important;background:#f5f0e6!important;color:#302737!important;overflow:auto}
+.etmos-item-detail{min-height:100%;font:14px/1.5 system-ui,sans-serif}
+.etmos-item-detail-header{display:flex;align-items:center;gap:14px;margin:-14px -14px 14px;padding:17px;background:#493454;color:#fff}
+.etmos-item-detail-header img{width:66px;height:66px;object-fit:contain;flex:none;border-radius:9px;background:#fffaf2;padding:6px}
+.etmos-item-detail-header>div{min-width:0;flex:1}.etmos-item-detail-header small{display:block;color:#e5d6e9;font:800 11px system-ui,sans-serif;letter-spacing:.12em}
+.etmos-item-detail-header h2{margin:4px 0 0;color:#fff;font:700 23px/1.2 Georgia,serif;overflow-wrap:anywhere}
+.etmos-item-detail-header input{width:100%;margin-top:5px;font:700 21px Georgia,serif}
+.etmos-item-detail-meta{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:10px;border-radius:7px;background:#eee7df}
+.etmos-item-detail-meta label{display:flex;align-items:center;gap:6px;color:#47384e;font-size:12px;font-weight:750}
+.etmos-item-detail-meta input:not([type=checkbox]),.etmos-item-detail-meta select{min-width:65px;max-width:160px;height:32px;padding:4px 6px;border:1px solid #bbaabc;border-radius:5px;background:#fffaf2;color:#302737}
+.etmos-item-detail-meta input[type=checkbox]{width:18px;height:18px;accent-color:#62466f}
+.etmos-item-detail-meta code{padding:4px 9px;border-radius:5px;background:#443251;color:#fff;font:800 13px system-ui,sans-serif}
+.etmos-item-tag{padding:5px 9px;border-radius:5px;background:#64446b;color:#fff;font:800 12px system-ui,sans-serif}
+.etmos-item-tag-funcao{background:#634569}.etmos-item-tag-objeto{background:#4c7180}.etmos-item-tag-caracteristica{background:#98754b}.etmos-item-tag-complemento{background:#78824e}
+.etmos-item-tag-habilidade{background:#227e88}.etmos-item-tag-origem{background:#a66372}
+.etmos-item-detail-description{padding:14px;border:1px solid #d4c7d4;border-left:5px solid #64446b;border-radius:7px;background:#fffaf2}
+.etmos-item-detail-description h3{margin:0 0 10px;color:#35283d;font:700 19px Georgia,serif}
+.etmos-item-description-text{min-height:180px;white-space:pre-wrap;overflow-wrap:anywhere;color:#382e3c;font:14px/1.65 system-ui,sans-serif}
+.etmos-item-detail-description textarea{box-sizing:border-box;width:100%;min-height:230px;padding:10px;border:1px solid #bbaabc;border-radius:5px;background:#fffdf9;color:#302737;font:14px/1.55 system-ui,sans-serif;resize:vertical}

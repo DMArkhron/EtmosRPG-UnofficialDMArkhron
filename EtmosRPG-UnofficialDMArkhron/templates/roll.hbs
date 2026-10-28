@@ -1,0 +1,11 @@
+<div class="etmos-roll-body">
+  <header class="etmos-roll-hero"><span class="etmos-roll-sigil">✦</span><div><small>ETMOS · TESTE</small><h2>{{actor.name}}</h2><p>O atributo entra automaticamente no teste. Adicione uma habilidade conhecida se for aplicável.</p></div></header>
+  <div class="etmos-roll-section"><span class="etmos-roll-index">01</span><div><strong>Base do teste</strong><p>O valor de {{attribute}} já está incluído.</p></div></div>
+  <div class="etmos-roll-base"><span><small>ATRIBUTO</small><strong>{{attribute}}</strong></span><b>{{value}}</b></div>
+  <label class="etmos-roll-field"><span>Habilidade adicional (opcional)</span><select name="skill"><option value="">Nenhuma habilidade</option>{{#each skills}}<option value="{{id}}">{{name}} ({{bonus}}){{#if repeated}} · {{count}} escolhas{{/if}}</option>{{/each}}</select></label>
+  <div class="etmos-roll-section"><span class="etmos-roll-index">02</span><div><strong>Ajuste circunstancial</strong><p>Some ou subtraia um modificador se a cena pedir.</p></div></div>
+  <label class="etmos-roll-field"><span>Modificador</span><input type="number" name="modifier" value="0" step="1" min="-100" max="100"/></label>
+  <p class="etmos-roll-hint">O bônus da habilidade se soma ao atributo. Habilidades repetidas somam seus bônus.</p>
+  <div class="etmos-roll-summary"><span data-roll-choice>Atributo · {{attribute}}</span><strong data-roll-formula>2d6 + {{value}}</strong></div>
+  <footer><button type="button" data-action="roll"><span>✦</span> Rolar teste</button></footer>
+</div>

@@ -1,0 +1,103 @@
+{
+  "Actor": {
+    "types": [
+      "personagem",
+      "criatura"
+    ],
+    "templates": {
+      "base": {
+        "atributos": {
+          "corpo": 0,
+          "mente": 0,
+          "alma": 0
+        },
+        "nivel": 1,
+        "origem": "",
+        "estresse": {
+          "value": 0,
+          "max": 4,
+          "mode": "auto",
+          "bonus": 0,
+          "manualMax": 4
+        },
+        "ferimentos": {
+          "value": 0,
+          "max": 4,
+          "mode": "auto",
+          "bonus": 0,
+          "manualMax": 4
+        },
+        "fadiga": 0,
+        "reacao": true,
+        "notas": "",
+        "marcos": {
+          "fisico": {
+            "marcos": 0,
+            "pontos": 0,
+            "notas": "",
+            "bonus": ""
+          },
+          "mental": {
+            "marcos": 0,
+            "pontos": 0,
+            "notas": "",
+            "bonus": ""
+          },
+          "emocional": {
+            "marcos": 0,
+            "pontos": 0,
+            "notas": "",
+            "bonus": ""
+          }
+        },
+        "idade": "",
+        "empenho": 0,
+        "conceito": {
+          "valores": "",
+          "comportamentos": "",
+          "futuro": "",
+          "importancia": "",
+          "aparencia": "",
+          "historia": ""
+        }
+      }
+    },
+    "personagem": {
+      "templates": [
+        "base"
+      ]
+    },
+    "criatura": {
+      "templates": [
+        "base"
+      ]
+    }
+  },
+  "Item": {
+    "types": [
+      "particula",
+      "habilidade",
+      "equipamento",
+      "origem"
+    ],
+    "particula": {
+      "categoria": "funcao",
+      "codigo": "",
+      "descricao": ""
+    },
+    "habilidade": {
+      "tipo": "Prática",
+      "bonus": 0,
+      "descricao": ""
+    },
+    "equipamento": {
+      "descricao": ""
+    },
+    "origem": {
+      "mundo": "Ambos",
+      "exclusivo": false,
+      "descricao": "",
+      "detalhe": ""
+    }
+  }
+}

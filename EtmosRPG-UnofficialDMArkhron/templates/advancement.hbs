@@ -1,0 +1,8 @@
+<div class="etmos-advancement-body">
+  <header><small>ETMOS · BÔNUS DE PROGRESSÃO</small><h2>{{category}} · Nível {{level}}</h2><p>Escolha um dos bônus da página 85. Cada bônus só pode ser concedido uma vez por nível, mesmo que outras categorias sejam concluídas depois.</p></header>
+  <section class="etmos-advancement-categories"><h3>Escolha o bônus</h3><select data-bonus><option value="">Selecione um bônus disponível</option>{{#each bonuses}}<option value="{{id}}" {{#if claimed}}disabled{{/if}}>{{label}}{{#if claimed}} · já escolhido{{/if}}</option>{{/each}}</select></section>
+  <section class="etmos-advancement-attribute" data-attribute-choice hidden><h3>+1 ponto de Atributo</h3><select name="advance-attribute"><option value="">Escolha um atributo</option>{{#each attributeOptions}}<option value="{{key}}">{{label}} (atual: {{value}})</option>{{/each}}</select></section>
+  <section class="etmos-advancement-catalog"><h3>Partículas e habilidades</h3>{{#each catalog}}<div class="etmos-advancement-pick" data-catalog-kind="{{kind}}" hidden><label>{{label}}<select data-pick-kind="{{kind}}"><option value="">Escolha e leia uma opção</option>{{#each items}}<option value="{{uuid}}">{{name}}{{#if code}} · {{code}}{{/if}}</option>{{/each}}</select></label><p class="etmos-advancement-description">Escolha um item para ler sua descrição.</p></div>{{/each}}</section>
+  <p class="etmos-advancement-note">Após os três bônus, o avanço de nível reinicia as categorias e libera os Complementos do novo nível.</p>
+  <footer><button type="button" data-action="confirm">Receber bônus</button></footer>
+</div>

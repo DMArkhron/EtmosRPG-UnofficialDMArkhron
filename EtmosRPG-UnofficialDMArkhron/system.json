@@ -1,0 +1,211 @@
+{
+  "id": "etmos",
+  "title": "ETMOS RPG",
+  "description": "Sistema ETMOS para Foundry VTT V13 e V14 Stable (Build 367)",
+  "version": "1.0.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14.367"
+  },
+  "authors": [
+    {
+      "name": "Comunidade ETMOS"
+    }
+  ],
+  "esmodules": [
+    "module/etmos.mjs"
+  ],
+  "styles": [
+    "styles/etmos.css"
+  ],
+  "packs": [
+    {
+      "name": "funcao",
+      "label": "Partículas — Funções",
+      "path": "packs/funcao",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "objeto",
+      "label": "Partículas — Objetos",
+      "path": "packs/objeto",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "caracteristica",
+      "label": "Partículas — Características",
+      "path": "packs/caracteristica",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "complemento",
+      "label": "Partículas — Complementos (Nível 1)",
+      "path": "packs/complemento",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "complemento-n2",
+      "label": "Partículas — Complementos (Nível 2)",
+      "path": "packs/complemento-n2",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "complemento-n3",
+      "label": "Partículas — Complementos (Nível 3)",
+      "path": "packs/complemento-n3",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "complemento-n4",
+      "label": "Partículas — Complementos (Nível 4)",
+      "path": "packs/complemento-n4",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "origens",
+      "label": "Características de Origem",
+      "path": "packs/origens",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "habilidades-pratica",
+      "label": "Habilidades Práticas",
+      "path": "packs/habilidades-pratica",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "habilidades-teorica",
+      "label": "Habilidades Teóricas",
+      "path": "packs/habilidades-teorica",
+      "type": "Item",
+      "system": "etmos",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "personagem": {},
+      "criatura": {}
+    },
+    "Item": {
+      "particula": {},
+      "habilidade": {},
+      "equipamento": {},
+      "origem": {}
+    }
+  },
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "ferimentos",
+  "secondaryTokenAttribute": "estresse",
+  "packFolders": [
+    {
+      "name": "ETMOS · Partículas",
+      "sorting": "m",
+      "color": "#634569",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Nível 1",
+          "sorting": "m",
+          "color": "#634569",
+          "packs": [
+            "funcao",
+            "objeto",
+            "caracteristica",
+            "complemento"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Nível 2",
+          "sorting": "m",
+          "color": "#4c7180",
+          "packs": [
+            "complemento-n2"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Nível 3",
+          "sorting": "m",
+          "color": "#98754b",
+          "packs": [
+            "complemento-n3"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Nível 4",
+          "sorting": "m",
+          "color": "#78824e",
+          "packs": [
+            "complemento-n4"
+          ],
+          "folders": []
+        }
+      ]
+    },
+    {
+      "name": "ETMOS · Personagens",
+      "sorting": "m",
+      "color": "#a66372",
+      "packs": [
+        "origens",
+        "habilidades-pratica",
+        "habilidades-teorica"
+      ],
+      "folders": []
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<div class="etmos-advancement-body">
+  <header><small>ETMOS · NOVO NÍVEL</small><h2>Nível {{level}} → {{nextLevel}}</h2><p>Escolha 1 Função e 1 Objeto para adicionar ao Grimório. Leia as descrições antes de confirmar.</p></header>
+  <section class="etmos-advancement-catalog">{{#each catalog}}<div class="etmos-advancement-pick"><label>{{label}}<select data-pick-kind="{{kind}}"><option value="">Escolha uma partícula</option>{{#each items}}<option value="{{uuid}}">{{name}} · {{code}}</option>{{/each}}</select></label><p class="etmos-advancement-description">Escolha para ler a descrição.</p></div>{{/each}}</section>
+  <p class="etmos-advancement-note">Ao confirmar, os Marcos são reiniciados e os Complementos liberados neste nível são adicionados.</p><footer><button type="button" data-action="confirm">Confirmar novo nível</button></footer>
+</div>

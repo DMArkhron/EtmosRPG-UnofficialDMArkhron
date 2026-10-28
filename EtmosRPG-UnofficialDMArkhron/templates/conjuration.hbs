@@ -1,0 +1,13 @@
+<div class="etmos-conjuration">
+  <div class="etmos-cast-intro"><strong>Montar frase mágica</strong><p>Escolha uma Função e um Objeto. Clique nas Características e nos Complementos na ordem desejada.</p></div>
+  <div class="etmos-selection"><div><small>1 · FUNÇÃO</small><strong>{{#if function}}{{function.name}} <code>{{function.system.codigo}}</code>{{else}}Escolha uma partícula{{/if}}</strong></div><div><small>2 · OBJETO</small><strong>{{#if object}}{{object.name}} <code>{{object.system.codigo}}</code>{{else}}Escolha uma partícula{{/if}}</strong></div></div>
+  <div class="etmos-cast-grid">
+    {{#each groups}}<section class="etmos-choice-group etmos-choice-{{key}}"><h3>{{label}} <span>{{items.length}}</span></h3><div class="etmos-choice-list">
+      {{#each items}}<button type="button" data-action="choose" data-id="{{id}}" class="etmos-choice {{#if selected}}selected{{/if}}"><span class="etmos-choice-name">{{name}}</span><code>{{code}}</code><span class="etmos-choice-mark" aria-hidden="true">{{#if selected}}✓{{else}}+{{/if}}</span></button>{{else}}<p class="etmos-empty">Nenhuma partícula conhecida.</p>{{/each}}
+    </div></section>{{/each}}
+  </div>
+  <section class="etmos-builder"><h3>3 · Características e Complementos</h3><div class="etmos-sequence">{{#each sequence}}<span class="etmos-sequence-chip">{{item.name}} <code>{{item.system.codigo}}</code><button type="button" data-action="remove" data-index="{{index}}" title="Retirar {{item.name}}" aria-label="Retirar {{item.name}}">×</button></span>{{else}}<em>Clique nas partículas acima para acrescentá-las.</em>{{/each}}</div></section>
+  <div class="etmos-preview"><small>FRASE EM ETMOS</small><strong>{{#if phrase}}{{phrase}}{{else}}Escolha uma Função e um Objeto{{/if}}</strong></div>
+  <label class="etmos-intention">Intenção do conjurador<textarea name="intention" placeholder="Descreva o efeito desejado, o alvo e as condições relevantes.">{{intention}}</textarea></label>
+  <footer><button type="button" data-action="send">Enviar frase ao chat</button></footer>
+</div>
