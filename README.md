@@ -31,7 +31,7 @@ O pacote funciona como **sistema de jogo próprio** do Foundry e não exige outr
 
 ## 📦 Instalação
 
-https://github.com/DMArkhron/EtmosRPG-UnofficialDMArkhron/releases/latest/download/system.json
+`https://github.com/DMArkhron/EtmosRPG-UnofficialDMArkhron/releases/latest/download/system.json`
 
 ### Instalação manual
 
