@@ -31,6 +31,8 @@ O pacote funciona como **sistema de jogo próprio** do Foundry e não exige outr
 
 ## 📦 Instalação
 
+### Manifesto
+
 `https://github.com/DMArkhron/EtmosRPG-UnofficialDMArkhron/releases/latest/download/system.json`
 
 ### Instalação manual
@@ -68,3 +70,11 @@ Como o repositório é privado, somente pessoas com acesso poderão abrir Issues
 **Implementação não oficial para Foundry VTT desenvolvida por DM Arkhron.**
 
 **ETMOS RPG é uma obra de Rafa Reis e da Editora Balde Galático.** Todos os direitos sobre a obra original, seus textos, regras, arte e materiais relacionados permanecem com seus titulares. Este projeto não é afiliado, endossado nem publicado oficialmente por Rafa Reis ou pela Editora Balde Galático. Materiais de terceiros conservam seus próprios direitos.
+
+- Rafa Reis
+`https://linktr.ee/atavolaproducoes`
+
+- Editora Balde Galáctico
+`https://baldegalactico.com.br/jogo/etmos/`
+
+
