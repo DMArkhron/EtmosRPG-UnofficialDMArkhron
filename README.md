@@ -31,7 +31,7 @@ O pacote funciona como **sistema de jogo próprio** do Foundry e não exige outr
 
 ## 📦 Instalação
 
-Este repositório é **privado**. O campo **Manifest URL** do Foundry não recebe automaticamente a autenticação da sua conta GitHub; portanto, um link para uma Release privada não serve como URL pública de instalação. Use a instalação manual abaixo. Uma URL de manifesto só deve ser divulgada se houver um local de download autorizado e acessível pelo Foundry.
+https://github.com/DMArkhron/EtmosRPG-UnofficialDMArkhron/releases/latest/download/system.json
 
 ### Instalação manual
 
